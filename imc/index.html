@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>imc</title>
+</head>
+<body>
+
+    <h1>Olá, seja bem vindo</h1>
+        <main>
+            <div></div>
+            <div id="imm">
+                <h2>Verifique aqui seu IMC:</h2>
+                <form action="" id="forms">
+                    <br>
+                    <p>Informe seu peso em <b>KILOGRAMAS</b></p>
+                    <br>
+                    <input placeholder="-Digite seu peso-" type="text" name="peso">
+                    <br>
+                    <br>
+                    <p>Informe sua altura em <b>METROS</b></p>
+                    <br>
+                    <input placeholder="-Digite sua altura-" type="text" name="altura">
+                    <br>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div></div>
+        </main>
+    <script>
+        var form = document.getElementById("forms")
+
+        function enviaForm(event) {
+            event.preventDefault()
+            
+            var dados = new FormData(this)
+            var peso = dados.get("peso")
+            var altura = dados.get("altura")
+
+            var resultado = peso / (altura * altura) 
+
+                if(resultado < 18.5)
+                {
+                    alert("IMC: " + resultado + "\n você esta abaixo do peso")
+                }
+            if(resultado >= 18.5 && resultado < 24)
+                {
+                    alert("IMC: " + resultado + "\n você esta com o peso normal")
+                }
+            if(resultado >= 24 && resultado < 29)
+                {
+                    alert("IMC: " + resultado + "\n você esta acima do peso")
+                }
+            if(resultado > 29)
+                {
+                    alert("IMC: " + resultado + "\n você esta Obeso")
+                }
+        }
+ 
+        form.addEventListener("submit", enviaForm)
+    </script>
+</body>
+</html>

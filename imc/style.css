@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+main{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+}
+
+
+#imm{
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 50px;
+    background-color: rgb(248, 255, 197);
+    height: 280px;
+}
+
+button{
+    border: none;
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    color: black;
+    background-color: greenyellow;
+}
+
+input{
+    border: none;
+    height: 35px;
+    width: 250px;
+    border: 1px solid;
+    border-radius: 40px;
+}
+
+h1{
+    text-align: center;
+    padding: 50px;
+}
