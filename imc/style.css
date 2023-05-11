@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+main{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+}
+
+body{
+    background-color: black;
+}
+
+
+#imm{
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    height: 280px;
+}
+
+button{
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: solid 1px white;
+}
+
+button:hover{
+    background-color: rgb(51, 137, 68);
+    
+}
+
+input{
+    border: none;
+    height: 35px;
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+p{
+    color: white;
+}
